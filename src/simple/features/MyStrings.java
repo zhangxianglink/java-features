@@ -6,9 +6,9 @@ import java.util.stream.Stream;
 
 /**
  * @author xiangzhang
- * @since 2022-01-31 16:04
+ * @since 2022-02-02 22:21
  */
-public class MyString {
+public class MyStrings {
     public static void main(String[] args) {
         // java 11
         System.out.println("".isBlank());
