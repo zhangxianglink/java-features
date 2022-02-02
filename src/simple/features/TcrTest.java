@@ -22,7 +22,6 @@ public class TcrTest {
         FileOutputStream fos = new FileOutputStream(fileName);
         OutputStreamWriter osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
-
         // java9 语法可以参数化
         try(bw;osw;fos){
             bw.write("Java9-可以被自动调用close()方法");
