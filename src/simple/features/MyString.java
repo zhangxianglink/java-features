@@ -1,5 +1,7 @@
 package simple.features;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 /**
@@ -15,7 +17,7 @@ public class MyString {
         final Stream<String> lines = "a\nb\n".lines();
         System.out.println(lines.toList());
 
-        final String transform = "UPPER".transform(e -> e.substring(2));
+        final List<String> transform = "UPPER".transform(e -> Arrays.asList(e.split("")));
         System.out.println(transform);
 
         // java 15

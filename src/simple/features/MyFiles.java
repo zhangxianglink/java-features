@@ -18,7 +18,11 @@ public class MyFiles {
         System.out.println(string);
 
         final Path path1 = Path.of("C:/Users/xiangzhang/IdeaProjects/seventeen/out/production/seventeen/simple/resources/java17");
-        final String replace = string.replace("java11", "java17");
-        Files.writeString(path1,replace);
+//        final String replace = string.replace("java11", "java17");
+//        Files.writeString(path1,replace);
+
+        //java 12
+        System.out.println("---------------");
+        System.out.println(Files.mismatch(path, path1));
     }
 }

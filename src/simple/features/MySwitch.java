@@ -1,7 +1,5 @@
 package simple.features;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author xiangzhang
@@ -17,8 +15,8 @@ public class MySwitch {
                 day ++ ;
                 yield  String.valueOf(day);
             }
-            case 1  -> "monday";
-            case 2  -> "tuesday";
+            case 1,2  -> "monday";
+            case 4,5  -> "tuesday";
             default -> throw new IllegalAccessException("Invalid Option: " + day);
         };
         System.out.println(dayOfWeek);
