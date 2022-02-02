@@ -19,10 +19,10 @@ public class MyStream {
         // -- java 9
         final var list = Arrays.asList(1, 2, 3, 4, 5);
         // pridicate 为false时，跳过之后的元素
-        final var integers = list.stream().takeWhile(e -> e != 4).toList();
+        final var integers = list.stream().takeWhile(e -> e < 4).toList();
         System.out.println(integers);
         //pridicate 为false时，返回之后的元素
-        System.out.println(list.stream().dropWhile(e -> e != 4).toList());
+        System.out.println(list.stream().dropWhile(e -> e < 4).toList());
 
         // 将单个元素生成stream
         final Stream<Integer> objectStream = Stream.ofNullable(5);
@@ -31,7 +31,7 @@ public class MyStream {
         System.out.println(concat.toList());
 
         //pridicate 为false时 结束运行，返回数据流
-        Stream.iterate(0, e -> e < 6, e -> e + 2).forEach(System.out::println);
+        Stream.iterate("z", e -> e.length() < 6, e -> e + "z").forEach(System.out::println);
 
         System.out.println("java 11 (Pridicate not) ");
         // 静态方法，底层还是negate

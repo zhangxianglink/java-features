@@ -11,21 +11,20 @@ public interface  MyInterface {
      *       目前除了没有 属性字段，其他都很像抽象类
      */
 
+    void design();
+
     private void jack(){
         System.out.println("jack is young");
     }
 
     default void show(){
+        count();
         jack();
     }
-
-    public static void main(String[] args) {
-        MyInterface myInterface = new MyInterface() {
-            @Override
-            public void show() {
-                MyInterface.super.show();
-            }
-        };
-        myInterface.show();
+    // 默认 public final
+    String number = "232";
+    static void count() {
+        System.out.println("static" + number);
     }
+
 }

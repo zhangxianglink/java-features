@@ -15,7 +15,7 @@ public class MyOptional {
         DoubleStream.of(1,2,3).filter(e -> e > 3).findAny()
                 .ifPresentOrElse(System.out::println, () -> System.out.println(5));
 
-        final Optional<Object> empty = Optional.empty();
+        Optional<Object> empty = Optional.empty();
         empty.ifPresentOrElse(x -> System.out.println(x), () -> System.out.println("not Found"));
         final Optional<Object> optional = Optional.of(0);
         optional.ifPresentOrElse(x -> System.out.println(x) , () -> System.out.println("not Found"));

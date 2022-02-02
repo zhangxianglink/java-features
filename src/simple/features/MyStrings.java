@@ -14,7 +14,7 @@ public class MyStrings {
         System.out.println("".isBlank());
         System.out.println("   ".isBlank());
 
-        final Stream<String> lines = "a\nb\n".lines();
+        final Stream<String> lines = "a\nb\nc".lines();
         System.out.println(lines.toList());
 
         final List<String> transform = "UPPER".transform(e -> Arrays.asList(e.split("")));

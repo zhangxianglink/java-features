@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
  * @since 2022-01-31 23:17
  */
 public class MyHttp2 {
-    // 能整个大活, java9, java11
+    //  java9, java11
     public static void main(String[] args) throws IOException, InterruptedException {
         final HttpClient httpClient = HttpClient.newHttpClient();
         final HttpRequest request = HttpRequest.newBuilder(URI.create("https://cn.bing.com/"))
