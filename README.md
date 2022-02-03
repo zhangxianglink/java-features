@@ -127,3 +127,6 @@ list1.stream().filter(Predicate.not(MyStream::isEven)).toList();
         zzzz
         zzzzz
 ```
+
+### end
+参考文章 [我没有三颗心脏](https://www.cnblogs.com/wmyskxz/category/1687855.html)
